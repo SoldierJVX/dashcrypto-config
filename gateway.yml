@@ -28,3 +28,8 @@ spring:
         wiretap: true
       httpserver:
         wiretap: true
+      routes:
+        - id: login
+          uri: lb://LOGIN
+          predicates:
+            - Path=/login/**
