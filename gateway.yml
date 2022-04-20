@@ -34,6 +34,6 @@ spring:
           predicates:
             - Path=/login/**
         - id: dashboard
-            uri: lb://DASHBOARD
-            predicates:
-              - Path=/dashboard/**
+          uri: lb://DASHBOARD
+          predicates:
+            - Path=/dashboard/**
